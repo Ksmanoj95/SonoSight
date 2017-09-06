@@ -1,22 +1,3 @@
-#!/usr/bin/env python2
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Sep  6 13:40:22 2017
-
-@author: balamurali
-"""
-
-#import cv2
-#import numpy as np
-#from matplotlib import pyplot as py
-#
-#
-#img = np.zeros((300,600,3))
-#img = np.uint8(img)
-#img[0:100,:,0] = 255
-#cv2.imshow('win',img)
-#cv2.waitKey(0)
-
 import numpy as np
 import cv2
 
@@ -46,11 +27,7 @@ cv2.drawContours(img,contours3,0,orange,-1)
 contours4 = [np.array([[45,225],[45,280],[100,280],[45,225]])]
 cv2.drawContours(img,contours4,0,royalblue,-1)
 
-
 img1 = cv2.cvtColor(img,cv2.COLOR_RGB2BGR)
-
-#img = cv
-
 
 cv2.imshow('win',img1)
 cv2.waitKey(0)
