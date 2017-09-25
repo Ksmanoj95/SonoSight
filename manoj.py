@@ -27,6 +27,7 @@ cv2.drawContours(img,contours3,0,orange,-1)
 contours4 = [np.array([[45,225],[45,280],[100,280],[45,225]])]
 cv2.drawContours(img,contours4,0,royalblue,-1)
 
+cv2.putText(img,"Hai",(300,250),0,0.8,(255,255,255),2,cv2.LINE_AA)
 img1 = cv2.cvtColor(img,cv2.COLOR_RGB2BGR)
 
 cv2.imshow('win',img1)
